@@ -6,7 +6,7 @@ public class ResultTests
     private readonly ErrorItemFaker _errorItemFaker = new();
 
     [Fact]
-    public void GivenValidProperties_WhenCreatingInstance_ThenValuesAreSetProperly()
+    public void GivenParameters_WhenInstantiating_ThenHasCorrectValues()
     {
         // Given
         var status = _faker.PickRandom<ResultStatus>();
@@ -20,7 +20,7 @@ public class ResultTests
     }
 
     [Fact]
-    public void GivenValidProperties_WhenCreatingOkInstance_ThenValuesAreSetProperly()
+    public void GivenParameters_WhenInstantiatingOk_ThenHasCorrectValues()
     {
         // Given
         var value = _faker.Random.Int();
@@ -34,7 +34,7 @@ public class ResultTests
     }
 
     [Fact]
-    public void GivenValidProperties_WhenCreatingNoContentInstance_ThenValuesAreSetProperly()
+    public void GivenParameters_WhenInstantiatingNoContent_ThenHasCorrectValues()
     {
         // Given & When
         var result = Result.NoContent();
@@ -45,7 +45,7 @@ public class ResultTests
     }
 
     [Fact]
-    public void GivenValidProperties_WhenCreatingBadRequestInstance_ThenValuesAreSetProperly()
+    public void GivenParameters_WhenInstantiatingBadRequest_ThenHasCorrectValues()
     {
         // Given
         var error = _errorItemFaker.Generate();
@@ -60,7 +60,7 @@ public class ResultTests
     }
 
     [Fact]
-    public void GivenValidProperties_WhenCreatingNotFoundInstance_ThenValuesAreSetProperly()
+    public void GivenParameters_WhenInstantiatingNotFound_ThenHasCorrectValues()
     {
         // Given & When
         var result = Result.NotFound();

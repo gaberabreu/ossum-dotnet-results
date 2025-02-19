@@ -1,4 +1,4 @@
-﻿namespace Ossum.Results.UnitTests.Fakers;
+﻿namespace Ossum.Results.UnitTests.TestHelper.Fakers;
 
 public class ErrorItemFaker : Faker<ErrorItem>
 {
@@ -10,7 +10,7 @@ public class ErrorItemFaker : Faker<ErrorItem>
 
         CustomInstantiator(f => new ErrorItem(
             f.Random.Word(),
-            f.Random.AlphaNumeric(5).ToUpper(),
+            f.Random.AlphaNumeric(5),
             f.Lorem.Sentence()
         ));
     }

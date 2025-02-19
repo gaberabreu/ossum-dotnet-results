@@ -2,15 +2,14 @@
 
 public class ErrorItemTests
 {
-    private readonly Faker _faker = new();
-
     [Fact]
-    public void GivenValidProperties_WhenCreatingInstance_ThenValuesAreSetProperly()
+    public void GivenParameters_WhenInstantiating_ThenHasCorrectValues()
     {
         // Given
-        var field = _faker.Lorem.Word();
-        var code = _faker.Random.AlphaNumeric(5);
-        var message = _faker.Lorem.Sentence();
+        var faker = new Faker();
+        var field = faker.Lorem.Word();
+        var code = faker.Random.AlphaNumeric(5);
+        var message = faker.Lorem.Sentence();
 
         // When
         var instance = new ErrorItem(field, code, message);

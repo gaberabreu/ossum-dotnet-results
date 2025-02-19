@@ -1,2 +1,2 @@
 ﻿global using Bogus;
-global using Ossum.Results.UnitTests.Fakers;
+global using Ossum.Results.UnitTests.TestHelper.Fakers;
