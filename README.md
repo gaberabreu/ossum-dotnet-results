@@ -7,4 +7,4 @@
 
 ## Overview
 
-**Ossum.Results** is a .NET library providing a Result class to encapsulate operation outcomes with standardized status handling..
+**Ossum.Results** is a .NET library providing a Result class to encapsulate operation outcomes with standardized status handling.
